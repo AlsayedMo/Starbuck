@@ -37,7 +37,7 @@ class Database
     function con()
     {
         try {
-            $this->CMS = new Database ("mysql:host=$this->SERVER;dbname=$this->DATEBASE", $this->UESERNAME, $this->PASSWORD);
+            $this->CMS = new PDO("mysql:host=$this->SERVER;dbname=$this->DATEBASE", $this->UESERNAME, $this->PASSWORD);
             return $this->CMS;
         } catch (PDOException $e) {
             print "Error!: " . $e->gettMessage() . "<br/>";
