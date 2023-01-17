@@ -3,6 +3,8 @@ session_start();
 include('includes/config.php');
 if (isset($_POST['login'])) 
 {
+    $ConDB = new PDO ("lockhost" , "bpcms" , "root" , );
+    $ConDb->con();  
 $email = $_POST['username'];
 $password = md5($_POST['password']);
 $sql = "SELECT UserName,Password FROM admin WHERE UserName=:email and Password=:password";
