@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-y: hidden;
+    
+}
+
+.header{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;    
+    width:auto;
+    height: 13rem;
+    
+}
+
+.header__img{
+    width: 5rem;
+    height:5rem ;
+}
+
+.header__items{
+    font-size: 2.3rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;  
+}
+
+.buttons{
+    margin-left: 95rem; 
+    gap: 2rem;
+    display: flex;
+}
+
+.button{
+    height: 4rem;
+    width: 10rem;
+    border-radius: 4rem;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.7rem;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+
+.header__inner{
+    box-shadow: 0 0 5rem 0 black;
+    width:160rem;
+    height:26rem;
+    margin: 4rem;
+    background-size: cover;
+    background-position: center;
+    padding-left:20rem;
+    padding-top: 20rem;
+    padding-right:20rem;
+    background-image:url(../img/starbucks.banner-01.png);
+}
+
+
+.elements{
+    background: rebeccapurple;
+    height: 50rem;
+    padding: 2rem;
+    margin: 40rem 4rem;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    list-style: none;
+}
+.container__items{
+    font-size:3rem ;
+}
+.container__img{
+    background-image: url(../img/Starbucks-banner-3.png);
+}
