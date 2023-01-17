@@ -11,7 +11,7 @@
 //}
 //catch (PDOException $e)
 //{
-//exit("Error: " . $e->getMessage());
+//xit("Error: " . $e->getMessage());
 //}
 
 class Database
@@ -40,7 +40,7 @@ class Database
             $this->CMS = new PDO("mysql:host=$this->SERVER;dbname=$this->DATEBASE", $this->UESERNAME, $this->PASSWORD);
             return $this->CMS;
         } catch (PDOException $e) {
-            print "Error!: " . $e->gettMessage() . "<br/>";
+            print "Error!: " . $e->getMessage() . "<br/>";
             die();
         }
     }
